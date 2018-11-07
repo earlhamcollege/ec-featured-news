@@ -59,6 +59,16 @@ module.exports = {
       }
     ].concat(options.addFields || [])
     options.arrangeFields = [
+      {
+        name:'content',
+        label:'Content Settings',
+        fields: ['news_title','news_date','news_content']
+      },
+      {
+        name:'display',
+        label: 'Display Settings',
+        fields: ['news_size','news_image']
+      }
     ].concat(options.arrangeFields || [])
   },
   construct: function (self, options) {
