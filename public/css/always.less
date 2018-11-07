@@ -1,0 +1,57 @@
+//default css for widget (use custom.less to add custom styles)
+
+@news_size1: 200px;
+@news_size2: 300px;
+@news_size3: 400px;
+
+.size-1{
+  height: @news_size1;
+  #date{
+    padding-top: 60px;
+  }
+}
+.size-2{
+  height: @news_size2;
+  #date{
+    padding-top: 100px;
+  }
+}
+.size-3{
+  height: @news_size3;
+  #date{
+    padding-top: 150px;
+  }
+}
+
+#news_item{
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8);
+  color: white;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(bottom to top,#fff,#000);
+    opacity: .6;
+  }
+
+  #title{
+    font-size: 30px;
+    margin-left:80px;
+    width: 50vw;
+  }
+  #date{
+    font-size: 20px;
+    margin-left:50px;
+  }
+  #content{
+    font-size: 20px;
+    margin-left:80px;
+    width: 50vw;
+  }
+}

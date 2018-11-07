@@ -27,6 +27,35 @@ module.exports = {
         label: 'Date',
         type: 'string',
         required: false
+      },
+      {
+        name: 'news_image',
+        type: 'singleton',
+				widgetType: 'apostrophe-images',
+				options: {
+					minSize: [ 600, 300 ],
+					focalPoint: true
+        }
+      },
+      {
+        name:'news_size',
+        type: 'select',
+        label: 'Select widget size',
+        required: true,
+        choices: [
+          {
+            label: 'Small',
+            value: '1'
+          },
+          {
+            label: 'Medium',
+            value: '2'
+          },
+          {
+            label: 'Large',
+            value: '3'
+          }
+        ]
       }
     ].concat(options.addFields || [])
     options.arrangeFields = [
