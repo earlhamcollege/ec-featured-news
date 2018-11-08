@@ -12,6 +12,12 @@ module.exports = {
         required: false
       },
       {
+        name: 'news_url',
+        label: 'URL to main article (optional)',
+        required: false,
+        type: 'string'
+      },
+      {
         name: 'news_content',
         label: 'Description',
         type: 'singleton',
@@ -62,7 +68,7 @@ module.exports = {
       {
         name:'content',
         label:'Content Settings',
-        fields: ['news_title','news_date','news_content']
+        fields: ['news_title','news_date','news_content','news_url']
       },
       {
         name:'display',

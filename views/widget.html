@@ -1,5 +1,13 @@
 <div class="size-{{ data.widget.news_size }}"id="news_item" style="background-image: url({{ apos.attachments.url(apos.images.first(data.widget.news_image), { size: 'full' }) }})">
-  <div id="date">{{ data.widget.news_date }}</div>
-  <div id="title">{{ data.widget.news_title }}</div>
-  <div id="content">{{ apos.areas.richText(data.widget.news_content) }}</div>
+  <div id="date">
+    {{ data.widget.news_date }}
+  </div>
+  <div id="title">
+    <a href="https://www.google.com/">
+      {{ data.widget.news_title }}
+    </a>
+  </div>
+  <div id="content">
+    {{ apos.areas.richText(data.widget.news_content) }}
+  </div>
 </div>
