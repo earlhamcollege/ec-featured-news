@@ -6,6 +6,15 @@ module.exports = {
   beforeConstruct: function(self, options) {
     options.addFields =[
       {
+        type: 'range',
+        name: 'news_gradient',
+        label: 'Gradient amount',
+        min: 0.0,
+        max: 1.0,
+        step: 0.01, // optional
+        def: 0.5
+      },
+      {
         name: 'news_title',
         label: 'Title',
         type: 'string',
@@ -73,7 +82,7 @@ module.exports = {
       {
         name:'display',
         label: 'Display Settings',
-        fields: ['news_size','news_image']
+        fields: ['news_size','news_image','news_gradient']
       }
     ].concat(options.arrangeFields || [])
   },
