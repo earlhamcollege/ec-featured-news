@@ -11,7 +11,7 @@ module.exports = {
         label: 'Gradient amount',
         min: 0.0,
         max: 1.0,
-        step: 0.01, // optional
+        step: 0.05, // optional
         def: 0.5
       },
       {
