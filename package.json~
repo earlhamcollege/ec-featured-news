@@ -1,14 +1,14 @@
 {
-  "name": "ec-button-widgets",
-  "version": "1.0.5",
-  "description": "Create buttons for to link to content, make use of FontAwesome classes, and allow multiple selectable styles.",
+  "name": "ec-featured-news-widgets",
+  "version": "1.0.2",
+  "description": "Create a styled news article with an image behind it",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/earlhamcollege/ec-button-widgets.git"
+    "url": "git+https://github.com/earlhamcollege/ec-featured-news-widgets.git"
   },
   "keywords": [
     "apostrophe-cms"
@@ -16,7 +16,7 @@
   "author": "Porter Libby",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/earlhamcollege/ec-button-widgets/issues"
+    "url": "https://github.com/earlhamcollege/ec-featured-news-widgets/issues"
   },
-  "homepage": "https://github.com/earlhamcollege/ec-button-widgets#readme"
+  "homepage": "https://github.com/earlhamcollege/ec-featured-news-widgets#readme"
 }
