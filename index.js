@@ -9,6 +9,7 @@ module.exports = {
         type: 'range',
         name: 'news_gradient',
         label: 'Gradient amount',
+        help: '0.0 is no gradient, 1.0 is full gradient',
         min: 0.0,
         max: 1.0,
         step: 0.05, // optional
@@ -22,7 +23,8 @@ module.exports = {
       },
       {
         name: 'news_url',
-        label: 'URL to main article (optional)',
+        label: 'URL (optional)',
+        help: 'Add a link to the title',
         required: false,
         type: 'string'
       },
@@ -46,6 +48,8 @@ module.exports = {
       {
         name: 'news_image',
         type: 'singleton',
+        required: false,
+        label: 'Select Image',
 				widgetType: 'apostrophe-images',
 				options: {
 					minSize: [ 600, 300 ],
@@ -55,7 +59,8 @@ module.exports = {
       {
         name:'news_size',
         type: 'select',
-        label: 'Select widget size',
+        label: 'Select widget height',
+        help: 'small = 200px, medium = 300px, large = 400px',
         required: true,
         choices: [
           {
