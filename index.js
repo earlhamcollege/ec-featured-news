@@ -19,7 +19,7 @@ module.exports = {
         name: 'news_title',
         label: 'Title',
         type: 'string',
-        required: false
+        required: true
       },
       {
         name: 'news_url',
@@ -43,7 +43,7 @@ module.exports = {
         name: 'news_date',
         label: 'Date',
         type: 'string',
-        required: false
+        required: true
       },
       {
         name: 'news_image',
