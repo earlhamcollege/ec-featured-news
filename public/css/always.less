@@ -1,33 +1,45 @@
 //default css for widget (use custom.less to add custom styles)
-
+body{
+  background-repeat: no-repeat;
+}
 @news_size1: 200px;
 @news_size2: 300px;
 @news_size3: 400px;
 
 .size-1{
   height: @news_size1;
+  background-repeat: no-repeat;
   #date{
-    padding-top: 60px;
+    padding-top: 40px;
   }
 }
 .size-2{
   height: @news_size2;
+  background-repeat: no-repeat;
   #date{
     padding-top: 100px;
   }
 }
 .size-3{
   height: @news_size3;
+  background-repeat: no-repeat;
   #date{
     padding-top: 150px;
   }
 }
 
 #news_item{
-  background-blend-mode: multiply;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center;
+  width:100%;
   color: white;
+  #news_item_sub{
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+  }
+
   a{
     color: white;
   }
@@ -44,6 +56,7 @@
   #content{
     font-size: 20px;
     margin-left:80px;
-    width: 50vw;
+    width: 80%;
+    text-align: justify;
   }
 }
