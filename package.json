@@ -1,6 +1,6 @@
 {
-  "name": "ec-featured-news-widgets",
-  "version": "1.0.3",
+  "name": "ec-featured-news",
+  "version": "1.0.0",
   "description": "Create a styled news article with an image behind it",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/earlhamcollege/ec-featured-news-widgets.git"
+    "url": "git+https://github.com/earlhamcollege/ec-featured-news.git"
   },
   "keywords": [
     "apostrophe-cms"
@@ -16,7 +16,7 @@
   "author": "Porter Libby",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/earlhamcollege/ec-featured-news-widgets/issues"
+    "url": "https://github.com/earlhamcollege/ec-featured-news/issues"
   },
-  "homepage": "https://github.com/earlhamcollege/ec-featured-news-widgets#readme"
+  "homepage": "https://github.com/earlhamcollege/ec-featured-news#readme"
 }
