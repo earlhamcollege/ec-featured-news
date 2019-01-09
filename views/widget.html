@@ -1,15 +1,17 @@
+{% set news = data.widget._news %}
+
 <div class="size-{{ data.widget.news_size }}" id="news_item" style="background-size: 100% 100%;   background-repeat: no-repeat; background: url({{ apos.attachments.url(apos.images.first(data.widget.news_image), { size: 'full' }) }}); background-size: cover; background-repeat: no-repeat;">
   <div id="news_item_sub" style="background: -webkit-linear-gradient(rgba(150,150,150,{{data.widget.news_gradient}}), rgba(0,0,0,{{data.widget.news_gradient}}))">
     <div id="date">
-      {{ data.widget.news_date }}
+      {{ news.publishedAt | date('DD-MM-YYYY') }}
     </div>
     <div id="title">
       <a href="{{ data.widget.news_url }}">
-        {{ data.widget.news_title }}
+        {{ news.title }}
       </a>
     </div>
     <div id="content">
-      {{ apos.areas.richText(data.widget.news_content) }}
+      {{ apos.areas.plaintext(news.content) | truncate(300) }}
     </div>
   </div>
 </div>

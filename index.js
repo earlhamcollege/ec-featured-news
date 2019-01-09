@@ -6,6 +6,21 @@ module.exports = {
   beforeConstruct: function(self, options) {
     options.addFields =[
       {
+        type: 'joinByOne',
+        name: '_news',
+        widthType: 'news',
+        filters: {
+          projection: {
+            title: 1,
+            slug: 1,
+            type: 1,
+            tags: 1,
+            content: 1,
+            publishedAt: 1
+          }
+        }
+      },
+      {
         type: 'range',
         name: 'news_gradient',
         label: 'Gradient amount',
