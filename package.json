@@ -1,5 +1,5 @@
 {
-  "name": "ec-featured-news-widgets",
+  "name": "ec-featured-news",
   "version": "1.0.5",
   "description": "Create a styled news article with an image behind it",
   "main": "index.js",
